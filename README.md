@@ -27,8 +27,6 @@ Simple, reproducible setup with Backtrader
 
 ---
 
----
-
 ## Requirements
 
 - Python 3.9+
