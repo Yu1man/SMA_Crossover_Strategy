@@ -36,7 +36,10 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 
 ## 4. Results Summary
 
-### 4.1 Best Parameter Combination
+### 4.1 Back Test Plot
+![Back Test Plot](BackTest.png)
+
+### 4.2 Best Parameter Combination
 
 | Fast | Slow | Total Return | Sharpe | Sortino | Volatility | Winrate |
 |------|------|---------------|--------|----------|-------------|----------|
@@ -46,27 +49,21 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 
 ---
 
-### 4.2 Performance Metrics Across All Combinations
+### 4.3 Performance Metrics Across All Combinations
  
-![Heatmap of Sharpe Ratios](results/sharpe_heatmap.png)
+![Heatmap of Sharpe Ratios](Sharpe_Heatmap.png)
 
 ---
 
-## 📉 5. Portfolio Performance
+## 5. Portfolio Performance
 
 ### 5.1 Portfolio Value Over Time 
-![Portfolio Value Curve](results/portfolio_curve.png)
+![Portfolio Value Curve](Portfolio_Change.png)
 
 **Observation:**  
 - The portfolio shows a steady growth during bullish trends.  
 - Temporary drawdowns occur during sideways or volatile markets.  
 - Final capital: **£XXX,XXX** (+XX.X% total return)
-
----
-
-### 5.2 Return Distribution
-*(Optional — Histogram of daily returns)*  
-![Return Histogram](results/return_histogram.png)
 
 ---
 
@@ -100,7 +97,7 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 
 ---
 
-## 🔍 8. Discussion & Insights
+##  8. Discussion & Insights
 
 - The SMA crossover strategy performs best with moderate time windows (Fast 10, Slow 30).  
 - Overly short windows increase noise and transaction costs.  
@@ -124,12 +121,3 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 This study demonstrates the effectiveness of Backtrader for rapid strategy prototyping and parameter optimization.  
 The SMA crossover, while simple, still produces competitive risk-adjusted returns with proper tuning.  
 Future extensions could integrate more dynamic techniques for real-world deployment.
-
----
-
-## Appendix
-
-- Code: `main.py`  
-- Strategy class: `MyFirstStrategy`  
-- Analyzer setup: Returns, Sharpe, Sortino, TradeAnalyzer  
-- Portfolio and 3D plots stored under `/results`
