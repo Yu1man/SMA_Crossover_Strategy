@@ -12,7 +12,7 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 | Item | Description |
 |------|--------------|
 | **Framework** | Backtrader |
-| **Data Source** | Yahoo Finance |
+| **Data Source** | Yahoo Finance | 
 | **Time Period** | *2023-01-01 to 2025-01-01* |
 | **Initial Cash** | 100,000 |
 | **Commission** | 0.1% per trade |
@@ -43,9 +43,9 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 
 | Fast | Slow | Total Return | Sharpe | Sortino | Volatility | Winrate |
 |------|------|---------------|--------|----------|-------------|----------|
-| 10   | 30   | 0.34          | 1.72   | 2.56     | 0.21        | 0.67     |
+| 15   | 20   | 2.1 %         | 0.961  | 1.007    | 0.011       | 41.7%    |
 
-**Best Strategy:** Fast = `10`, Slow = `30`, Sharpe = `1.72`
+**Best Strategy:** Fast = `15`, Slow = `20`, Sharpe = `0.961`
 
 ---
 
@@ -61,9 +61,9 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 ![Portfolio Value Curve](Portfolio_Change.png)
 
 **Observation:**  
-- The portfolio shows a steady growth during bullish trends.  
+- The portfolio shows SMA may not stable enough to make profit in TSLA.  
 - Temporary drawdowns occur during sideways or volatile markets.  
-- Final capital: **£XXX,XXX** (+XX.X% total return)
+- Final capital: **$102,081** (+2.1% total return)
 
 ---
 
@@ -78,7 +78,7 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 ![Return Volatility Sharpe 3D](results/return_vol_sharpe_3d.png)
 
 **Interpretation:**  
-- Sharpe ratio tends to peak when fast period ≈ 10 and slow ≈ 30.  
+- Sharpe ratio tends to peak when fast period ≈ 15 and slow ≈ 20.  
 - Longer slow SMA reduces noise but may lower responsiveness.  
 - Too short fast SMA causes overtrading and higher volatility.
 
@@ -93,7 +93,7 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 | **Sharpe Ratio** | 1.72 | Risk-adjusted performance |
 | **Sortino Ratio** | 2.56 | Penalizes only downside risk |
 | **Max Drawdown** | 9.4% | Largest peak-to-trough loss |
-| **Winrate** | 67% | Percentage of profitable trades |
+| **Winrate** | 41% | Percentage of profitable trades |
 
 ---
 
