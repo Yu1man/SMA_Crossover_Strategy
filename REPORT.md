@@ -38,7 +38,7 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 ## 4. Results Summary
 
 ### 4.1 Back Test Plot
-![Back Test Plot](BackTest.png)
+![Back Test Plot](Results/BackTest.png)
 
 ### 4.2 Best Parameter Combination
 
@@ -52,14 +52,14 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 
 ### 4.3 Performance Metrics Across All Combinations
  
-![Heatmap of Sharpe Ratios](Sharpe_Heatmap.png)
+![Heatmap of Sharpe Ratios](Results/Sharpe_Heatmap.png)
 
 ---
 
 ## 5. Portfolio Performance
 
 ### 5.1 Portfolio Value Over Time 
-![Portfolio Value Curve](Portfolio_Change.png)
+![Portfolio Value Curve](Results/Portfolio_Change.png)
 
 **Observation:**  
 - The portfolio shows SMA may not stable enough to make profit in TSLA.  
@@ -71,7 +71,7 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 ##  6. Analysis and Visualizations
 
 ### 6.1 Return-Sharpe Relationship
-![Return Volatility Sharpe ](Return_Sharpe.png)
+![Return Volatility Sharpe ](Results/Return_Sharpe.png)
 
 **Interpretation:**  
 - Sharpe ratio is highly correlated with return.
