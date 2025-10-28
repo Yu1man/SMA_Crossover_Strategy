@@ -74,9 +74,8 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 ![Return Volatility Sharpe ](Return_Sharpe.png)
 
 **Interpretation:**  
-- Sharpe ratio tends to peak when fast period ≈ 15 and slow ≈ 20.  
-- Longer slow SMA reduces noise but may lower responsiveness.  
-- Too short fast SMA causes overtrading and higher volatility.
+- Sharpe ratio is highly correlated with return.
+- The highest win rate setup comes with median sharpe ratio
 
 ---
 
