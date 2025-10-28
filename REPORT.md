@@ -13,6 +13,7 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 |------|--------------|
 | **Framework** | Backtrader |
 | **Data Source** | Yahoo Finance | 
+| **Stock Code** | TSLA | 
 | **Time Period** | *2023-01-01 to 2025-01-01* |
 | **Initial Cash** | 100,000 |
 | **Commission** | 0.1% per trade |
@@ -67,15 +68,10 @@ The goal was to identify the optimal combination of `fast` and `slow` SMA parame
 
 ---
 
-##  6. 3D Analysis and Visualizations
+##  6. Analysis and Visualizations
 
-### 6.1 Sharpe Ratio Surface
-*(Insert your 3D Sharpe ratio figure)*  
-![Sharpe 3D Plot](results/sharpe_3d_plot.png)
-
-### 6.2 Return-Volatility-Sharpe Relationship
-*(Insert your 3D plot)*  
-![Return Volatility Sharpe 3D](results/return_vol_sharpe_3d.png)
+### 6.1 Return-Sharpe Relationship
+![Return Volatility Sharpe ](Return_Sharpe.png)
 
 **Interpretation:**  
 - Sharpe ratio tends to peak when fast period ≈ 15 and slow ≈ 20.  
